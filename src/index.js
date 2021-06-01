@@ -47,4 +47,6 @@ const themeInLocalSt = localStorage.getItem('theme');
   if (themeInLocalSt === Theme.DARK) {
     bodyEl.classList.add(Theme.DARK);
     switchEl.checked = true;
-}
+  } else {
+  bodyEl.classList.add(Theme.LIGHT);
+  }
